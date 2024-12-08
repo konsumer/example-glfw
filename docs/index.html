@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>GL is cool!</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/10213618" />
+    <style>
+    body {
+      display:flex;
+      align-itens: center;
+      justify-content: center;
+      margin:0;
+      color: #fff;
+      background: #000;
+      height: 100vh;
+    }
+    @media (orientation: landscape) {
+      body {
+        flex-direction: row;
+      }
+    }
+
+    @media (orientation: portrait) {
+      body {
+        flex-direction: column;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <canvas></canvas>
+  </body>
+  <script type="module">
+  import setup from './example.mjs'
+  await setup({canvas: document.getElementsByTagName('canvas')[0]})
+  </script>
+</html>
