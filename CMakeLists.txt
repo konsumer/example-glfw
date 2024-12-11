@@ -42,8 +42,8 @@ function(SETUP_GLFW_TARGET name)
   endif()
 endfunction()
 
-add_executable(example example.cpp)
+add_executable(example src/example.cpp)
 SETUP_GLFW_TARGET(example)
 
-add_executable(jstest jstest.c)
+add_executable(jstest src/jstest.c)
 SETUP_GLFW_TARGET(jstest)
